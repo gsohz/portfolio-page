@@ -3,5 +3,12 @@ body,
 #root {
   height: 100%;
   margin: 0;
+  font-family: 'Jost', Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: #05000c;
+  color: #efefef;
+  display: flex;
+  justify-content: center;
+}
