@@ -46,3 +46,42 @@ strong {
   font-weight: normal;
 }
 
+.liquid-shape {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+  -webkit-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+  -moz-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+  -ms-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+  -o-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+  animation: liquid 8s ease-in-out infinite;
+  -webkit-animation: liquid 8s ease-in-out infinite;
+  -webkit-filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@keyframes liquid {
+  0%{
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+    -webkit-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+    -moz-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+    -ms-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+    -o-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+    background-size: 100% 100%;
+}
+50%{
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%  ;
+    -webkit-border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%  ;
+    -moz-border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%  ;
+    -ms-border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%  ;
+    -o-border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%  ;
+    background-size: 300% 150%;
+}
+100%{
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+    -webkit-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+    -moz-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+    -ms-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+    -o-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%  ;
+    background-size: 100% 100%;
+}
+}
+

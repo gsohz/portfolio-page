@@ -1,12 +1,41 @@
 import './App.css'
 
 function App() {
+  const langs = [
+    { name: 'Java', pic: '' },
+    { name: 'Javascript', pic: '' },
+    { name: 'PHP', pic: '' },
+    { name: 'Typescript', pic: '' }
+  ]
+
+  const dbs = [
+    { name: 'MySQL', pic: '' },
+    { name: 'MongoDB', pic: '' },
+    { name: 'Java', pic: '' }
+  ]
+
+  const frontend = [
+    { name: 'React', pic: '' },
+    { name: 'HTML', pic: '' },
+    { name: 'CSS', pic: '' }
+  ]
+
+  const backend = [
+    { name: 'Node.js', pic: '' },
+    { name: 'Springboot', pic: '' }
+  ]
+
+  const knowledges = [
+    { name: 'API Rest', pic: '' },
+    { name: 'Responsividade', pic: '' }
+  ]
+
   return (
     <div className="container">
       <div>
         <img
           src="https://github.com/gsohz.png"
-          className="logo "
+          className="logo liquid-shape"
           alt="Minha Foto"
         />
       </div>
@@ -39,19 +68,22 @@ function App() {
         </p>
         <p>
           Durante meus estudos tive contato com diversas tecnologias como:
-          <strong className="blue"> Java, </strong>
-          <strong className="blue">React, </strong>
-          <strong className="blue">PHP, </strong>
-          <strong className="blue">MySQL, </strong>
-          <strong className="blue">MongoDB, </strong>
-          <strong className="blue">Javascript, </strong>
-          <strong className="blue">Typescript, </strong>
-          <strong className="blue">HTML, </strong>
-          <strong className="blue">CSS, </strong>
-          <strong className="blue">Node.js, </strong>
-          <strong className="blue">Springboot, </strong>
-          <strong className="blue">API Rest </strong>e
-          <strong className="blue"> Responsividade.</strong>
+          <div className="card">
+            <span className="card-title">Linguagens</span>
+            <strong className="blue"> Java, </strong>
+            <strong className="blue">React, </strong>
+            <strong className="blue">PHP, </strong>
+            <strong className="blue">MySQL, </strong>
+            <strong className="blue">MongoDB, </strong>
+            <strong className="blue">Javascript, </strong>
+            <strong className="blue">Typescript, </strong>
+            <strong className="blue">HTML, </strong>
+            <strong className="blue">CSS, </strong>
+            <strong className="blue">Node.js, </strong>
+            <strong className="blue">Springboot, </strong>
+            <strong className="blue">API Rest </strong>e
+            <strong className="blue"> Responsividade.</strong>
+          </div>
         </p>
       </div>
     </div>
