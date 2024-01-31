@@ -1,33 +1,49 @@
 import './App.css'
+import imgJava from './assets/java-svgrepo-com.svg'
+import imgJs from './assets/javascript-svgrepo-com.svg'
+import imgPHP from './assets/php-svgrepo-com.svg'
+import imgTs from './assets/typescript-logo-svgrepo-com.svg'
+import imgMySQL from './assets/mysql-svgrepo-com.svg'
+import imgMongo from './assets/mongodb-svgrepo-com.svg'
+import imgReact from './assets/react.svg'
+import imgHtml from './assets/html-5-svgrepo-com.svg'
+import imgCss from './assets/css-3-svgrepo-com.svg'
+import imgNodejs from './assets/nodejs-svgrepo-com.svg'
+import imgSpringboot from './assets/icons8-spring-boot-480.png'
 
 function App() {
-  const langs = [
-    { name: 'Java', pic: '' },
-    { name: 'Javascript', pic: '' },
-    { name: 'PHP', pic: '' },
-    { name: 'Typescript', pic: '' }
-  ]
-
-  const dbs = [
-    { name: 'MySQL', pic: '' },
-    { name: 'MongoDB', pic: '' },
-    { name: 'Java', pic: '' }
-  ]
-
-  const frontend = [
-    { name: 'React', pic: '' },
-    { name: 'HTML', pic: '' },
-    { name: 'CSS', pic: '' }
-  ]
-
-  const backend = [
-    { name: 'Node.js', pic: '' },
-    { name: 'Springboot', pic: '' }
-  ]
-
   const knowledges = [
-    { name: 'API Rest', pic: '' },
-    { name: 'Responsividade', pic: '' }
+    {
+      title: 'Linguagens',
+      content: [
+        { name: 'Java', pic: imgJava },
+        { name: 'Javascript', pic: imgJs },
+        { name: 'PHP', pic: imgPHP },
+        { name: 'Typescript', pic: imgTs }
+      ]
+    },
+    {
+      title: 'Banco de dados',
+      content: [
+        { name: 'MySQL', pic: imgMySQL },
+        { name: 'MongoDB', pic: imgMongo }
+      ]
+    },
+    {
+      title: 'Front-End',
+      content: [
+        { name: 'React', pic: imgReact },
+        { name: 'HTML', pic: imgHtml },
+        { name: 'CSS', pic: imgCss }
+      ]
+    },
+    {
+      title: 'Back-End',
+      content: [
+        { name: 'Node.js', pic: imgNodejs },
+        { name: 'Springboot', pic: imgSpringboot }
+      ]
+    }
   ]
 
   return (
@@ -63,28 +79,33 @@ function App() {
           <strong className="pink"> proativa,</strong>
           <strong className="pink"> criativa,</strong> com
           <strong className="pink"> capacidade de adaptação,</strong>
-          <strong className="pink"> aprendizado rápido</strong> e tenho
+          <strong className="pink"> aprendizado rápido</strong> e
           <strong className="pink"> compromisso com os prazos.</strong>
         </p>
-        <p>
-          Durante meus estudos tive contato com diversas tecnologias como:
-          <div className="card">
-            <span className="card-title">Linguagens</span>
-            <strong className="blue"> Java, </strong>
-            <strong className="blue">React, </strong>
-            <strong className="blue">PHP, </strong>
-            <strong className="blue">MySQL, </strong>
-            <strong className="blue">MongoDB, </strong>
-            <strong className="blue">Javascript, </strong>
-            <strong className="blue">Typescript, </strong>
-            <strong className="blue">HTML, </strong>
-            <strong className="blue">CSS, </strong>
-            <strong className="blue">Node.js, </strong>
-            <strong className="blue">Springboot, </strong>
-            <strong className="blue">API Rest </strong>e
-            <strong className="blue"> Responsividade.</strong>
-          </div>
-        </p>
+        <p>Durante meus estudos tive contato com diversas tecnologias como:</p>
+
+        <div className="cards">
+          {knowledges.map(knowledge => {
+            return (
+              <div className="card">
+                <span className="card-title">{knowledge.title}</span>
+                {knowledge.content.map(info => {
+                  return (
+                    <div className="card-info">
+                      <img
+                        src={info.pic}
+                        className="card-logo"
+                        title={info.name}
+                        alt={`logo ${info.name}`}
+                      />
+                      <strong className=""> {info.name} </strong>
+                    </div>
+                  )
+                })}
+              </div>
+            )
+          })}
+        </div>
       </div>
     </div>
   )
