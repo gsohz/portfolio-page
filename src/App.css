@@ -87,6 +87,7 @@ strong {
 
 .cards {
   display: flex;
+  justify-content: center;
   gap: 2em;
 }
 
@@ -133,4 +134,24 @@ p {
 .logo-social-media:hover{
   filter: invert(73%) sepia(82%) saturate(510%) hue-rotate(120deg) brightness(108%) contrast(107%);
   -webkit-filter: invert(73%) sepia(82%) saturate(510%) hue-rotate(120deg) brightness(108%) contrast(107%);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #efefef;
+}
+
+
+
+.content-project{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.content-project > div {
+  flex: 30%;
 }

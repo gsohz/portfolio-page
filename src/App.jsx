@@ -16,6 +16,8 @@ import imgCV from './assets/icons8-curriculum-64.png'
 import Card from './components/Card/Card'
 import pdfCV from './assets/Curriculo-Gabriel_Ferreira.pdf'
 
+import Project from './components/Project/Project'
+
 function App() {
   const knowledges = [
     {
@@ -126,9 +128,15 @@ function App() {
         <p>Durante meus estudos tive contato com diversas tecnologias como:</p>
 
         <div className="cards">
-          {knowledges.map(knowledge => {
-            return <Card knowledge={knowledge} />
+          {knowledges.map((knowledge, index) => {
+            return <Card key={index} knowledge={knowledge} />
           })}
+        </div>
+
+        <h1>Meus projetos</h1>
+
+        <div className="content-project">
+          <Project />
         </div>
       </div>
     </div>
