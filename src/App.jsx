@@ -10,7 +10,11 @@ import imgHtml from './assets/html-5-svgrepo-com.svg'
 import imgCss from './assets/css-3-svgrepo-com.svg'
 import imgNodejs from './assets/nodejs-svgrepo-com.svg'
 import imgSpringboot from './assets/icons8-spring-boot-480.png'
+import imgLinkedin from './assets/linkedin-svgrepo-com.svg'
+import imgGitHub from './assets/github-142-svgrepo-com.svg'
+import imgCV from './assets/icons8-curriculum-64.png'
 import Card from './components/Card/Card'
+import pdfCV from './assets/Curriculo-Gabriel_Ferreira.pdf'
 
 function App() {
   const knowledges = [
@@ -49,18 +53,54 @@ function App() {
 
   return (
     <div className="container">
-      <div>
-        <img
-          src="https://github.com/gsohz.png"
-          className="logo liquid-shape"
-          alt="Minha Foto"
-        />
-      </div>
       <div className="content">
-        <span>Olá, me chamo</span>
-        <h1>
-          Gabriel <span className="blue">Souza.</span>
-        </h1>
+        <div className="header-portfolio">
+          <div className="header-portfolio-info">
+            <span>Olá, me chamo</span>
+            <h1 className="header-portfolio-name">
+              Gabriel <span className="blue">Souza.</span>
+            </h1>
+          </div>
+          <div className="header-portfolio-pic">
+            <div className="header-portfolio-pic-social">
+              <a
+                href="https://www.linkedin.com/in/gabsouza4/"
+                target="_blank"
+                title="Visitar LinkedIn"
+              >
+                <img
+                  src={imgLinkedin}
+                  className="logo-social-media"
+                  alt="Logo LinkedIn"
+                />
+              </a>
+              <a
+                href="https://github.com/gsohz"
+                target="_blank"
+                title="Visitar GitHub"
+              >
+                <img
+                  src={imgGitHub}
+                  className="logo-social-media"
+                  alt="Logo GitHub"
+                />
+              </a>
+              <a title="Download CV" href={pdfCV} download>
+                <img
+                  src={imgCV}
+                  className="logo-social-media logo-cv"
+                  alt="Logo GitHub"
+                />
+              </a>
+            </div>
+
+            <img
+              src="https://github.com/gsohz.png"
+              className="logo liquid-shape"
+              alt="Minha Foto"
+            />
+          </div>
+        </div>
         <p>
           Sou tecnólogo em{' '}
           <strong className="pink">

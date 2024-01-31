@@ -89,3 +89,48 @@ strong {
   display: flex;
   gap: 2em;
 }
+
+.header-portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header-portfolio {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.header-portfolio-pic{
+  display: flex;
+  align-items: flex-end;
+}
+
+.header-portfolio-pic-social{
+  display: flex;
+  gap: 1em;
+  margin: 1.6em 0;
+  transform: translate(1em);
+  -webkit-transform: translate(1em);
+  -moz-transform: translate(1em);
+  -ms-transform: translate(1em);
+  -o-transform: translate(1em);
+}
+
+.logo-social-media {
+  width: 2em;
+  filter: invert(73%) sepia(82%) saturate(510%) hue-rotate(120deg) brightness(78%) contrast(107%);
+  -webkit-filter: invert(73%) sepia(82%) saturate(510%) hue-rotate(120deg) brightness(78%) contrast(107%);
+}
+
+.logo-cv {
+  width: 2.1em;
+}
+
+.logo-social-media:hover{
+  filter: invert(73%) sepia(82%) saturate(510%) hue-rotate(120deg) brightness(108%) contrast(107%);
+  -webkit-filter: invert(73%) sepia(82%) saturate(510%) hue-rotate(120deg) brightness(108%) contrast(107%);
+}
