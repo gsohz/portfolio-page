@@ -17,12 +17,8 @@ export default function Project() {
               {project.topics.map((icon, index) => {
                 if (!icon.includes('pinned'))
                   return (
-                    <div title={icon}>
-                      <StackIcons
-                        key={icon}
-                        className="stack-icon"
-                        itemTopics={icon}
-                      />
+                    <div key={icon} title={icon}>
+                      <StackIcons className="stack-icon" itemTopics={icon} />
                     </div>
                   )
               })}
