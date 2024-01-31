@@ -10,6 +10,7 @@ import imgHtml from './assets/html-5-svgrepo-com.svg'
 import imgCss from './assets/css-3-svgrepo-com.svg'
 import imgNodejs from './assets/nodejs-svgrepo-com.svg'
 import imgSpringboot from './assets/icons8-spring-boot-480.png'
+import Card from './components/Card/Card'
 
 function App() {
   const knowledges = [
@@ -86,24 +87,7 @@ function App() {
 
         <div className="cards">
           {knowledges.map(knowledge => {
-            return (
-              <div className="card">
-                <span className="card-title">{knowledge.title}</span>
-                {knowledge.content.map(info => {
-                  return (
-                    <div className="card-info">
-                      <img
-                        src={info.pic}
-                        className="card-logo"
-                        title={info.name}
-                        alt={`logo ${info.name}`}
-                      />
-                      <strong className=""> {info.name} </strong>
-                    </div>
-                  )
-                })}
-              </div>
-            )
+            return <Card knowledge={knowledge} />
           })}
         </div>
       </div>
