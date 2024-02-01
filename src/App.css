@@ -127,6 +127,14 @@ p {
   -webkit-filter: invert(73%) sepia(82%) saturate(510%) hue-rotate(120deg) brightness(78%) contrast(107%);
 }
 
+.logo-social-media:hover{
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+}
+
 .logo-cv {
   width: 2.1em;
 }
@@ -152,45 +160,4 @@ a:visited {
 
 .content-project > div {
   flex: 30%;
-}
-
-.content-icon-background{
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding: 10px 0;
-  white-space: nowrap;
-  transform: rotate(-30deg);
-  -webkit-transform: rotate(-30deg);
-  -moz-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  -o-transform: rotate(-30deg);
-}
-
-.icon-background {
-  transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
-  opacity: 1;
-  filter: invert(10%) sepia(100%) saturate(100%) hue-rotate(160deg) brightness(100%) contrast(100%);
-  -webkit-filter: invert(10%) sepia(100%) saturate(100%) hue-rotate(160deg) brightness(100%) contrast(100%);
-  width: 4em;
-  user-select: none;
-  padding: 0 5px;
-}
-
-.icon-background:hover {
-  transition: all 0s ease-in;
-  -webkit-transition: all 0s ease-in;
-  -moz-transition: all 0s ease-in;
-  -ms-transition: all 0s ease-in;
-  -o-transition: all 0s ease-in;
-  opacity: 0.2;
-  filter: invert(10%) sepia(100%) saturate(100%) hue-rotate(160deg) brightness(100%) contrast(100%) drop-shadow(0 0 120px #02ffff);
-  -webkit-filter: invert(10%) sepia(100%) saturate(100%) hue-rotate(160deg) brightness(100%) contrast(100%) drop-shadow(0 0 120px #02ffff);
 }

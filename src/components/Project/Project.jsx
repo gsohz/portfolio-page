@@ -9,7 +9,7 @@ export default function Project() {
       {projects.map(project => {
         return (
           <div className="card card-project" key={project.id}>
-            <a href={project.html_url}>
+            <a href={project.html_url} className="link-title" target="_blank">
               <h2>{project.name}</h2>
             </a>
             <p>{project.description}</p>
