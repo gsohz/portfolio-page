@@ -58,90 +58,98 @@ function App() {
     <>
       <div className="container">
         <div className="content">
-          <div className="header-portfolio">
-            <div className="header-portfolio-info">
-              <span>Olá, me chamo</span>
-              <h1 className="header-portfolio-name">
-                Gabriel <span className="blue">Souza.</span>
-              </h1>
-            </div>
-            <div className="header-portfolio-pic">
-              <div className="header-portfolio-pic-social">
-                <a
-                  href="https://www.linkedin.com/in/gabsouza4/"
-                  target="_blank"
-                  title="Visitar LinkedIn"
-                >
-                  <img
-                    src={imgLinkedin}
-                    className="logo-social-media"
-                    alt="Logo LinkedIn"
-                  />
-                </a>
-                <a
-                  href="https://github.com/gsohz"
-                  target="_blank"
-                  title="Visitar GitHub"
-                >
-                  <img
-                    src={imgGitHub}
-                    className="logo-social-media"
-                    alt="Logo GitHub"
-                  />
-                </a>
-                <a title="Download CV" href={pdfCV} download>
-                  <img
-                    src={imgCV}
-                    className="logo-social-media logo-cv"
-                    alt="Logo GitHub"
-                  />
-                </a>
+          <div className="section-portfolio">
+            <div className="header-portfolio">
+              <div className="header-portfolio-info">
+                <span>Olá, me chamo</span>
+                <h1 className="header-portfolio-name">
+                  Gabriel <span className="blue">Souza.</span>
+                </h1>
               </div>
+              <div className="header-portfolio-pic">
+                <div className="header-portfolio-pic-social">
+                  <a
+                    href="https://www.linkedin.com/in/gabsouza4/"
+                    target="_blank"
+                    title="Visitar LinkedIn"
+                  >
+                    <img
+                      src={imgLinkedin}
+                      className="logo-social-media"
+                      alt="Logo LinkedIn"
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/gsohz"
+                    target="_blank"
+                    title="Visitar GitHub"
+                  >
+                    <img
+                      src={imgGitHub}
+                      className="logo-social-media"
+                      alt="Logo GitHub"
+                    />
+                  </a>
+                  <a title="Download CV" href={pdfCV} download>
+                    <img
+                      src={imgCV}
+                      className="logo-social-media logo-cv"
+                      alt="Logo GitHub"
+                    />
+                  </a>
+                </div>
 
-              <img
-                src="https://github.com/gsohz.png"
-                className="logo liquid-shape"
-                alt="Minha Foto"
-              />
+                <img
+                  src="https://github.com/gsohz.png"
+                  className="logo liquid-shape"
+                  alt="Minha Foto"
+                />
+              </div>
+            </div>
+            <p>
+              Sou tecnólogo em{' '}
+              <strong className="pink">
+                Análise e Desenvolvimento de Sistemas,
+              </strong>{' '}
+              atualmente estou estudando
+              <strong className="blue"> Full-Stack</strong> focando nas
+              tecnologias
+              <strong className="blue"> Java</strong> e{' '}
+              <strong className="blue"> React.</strong>
+            </p>
+            <p>
+              Com um ano de experiência em estágio de suporte técnico e
+              desenvolvimento de software, desempenhei um papel fundamental no
+              desenvolvimento de sites em PHP, na modelagem do banco de dados em
+              MySQL, e assegurei a implementação e o funcionamento eficaz das
+              aplicações em produção. Sou uma pessoa
+              <strong className="pink"> proativa,</strong>
+              <strong className="pink"> criativa,</strong> com
+              <strong className="pink"> capacidade de adaptação,</strong>
+              <strong className="pink"> aprendizado rápido</strong> e
+              <strong className="pink"> compromisso com os prazos.</strong>
+            </p>
+          </div>
+
+          <div className="section-portfolio">
+            <h1>Meus conhecimentos</h1>
+            <p>
+              Durante meus estudos tive contato com diversas tecnologias como:
+            </p>
+
+            <div className="cards">
+              {knowledges.map((knowledge, index) => {
+                return <Card key={index} knowledge={knowledge} />
+              })}
             </div>
           </div>
-          <p>
-            Sou tecnólogo em{' '}
-            <strong className="pink">
-              Análise e Desenvolvimento de Sistemas,
-            </strong>{' '}
-            atualmente estou estudando
-            <strong className="blue"> Full-Stack</strong> focando nas
-            tecnologias
-            <strong className="blue"> Java</strong> e{' '}
-            <strong className="blue"> React.</strong>
-          </p>
-          <p>
-            Com um ano de experiência em estágio de suporte técnico e
-            desenvolvimento de software, desempenhei um papel fundamental no
-            desenvolvimento de sites em PHP, na modelagem do banco de dados em
-            MySQL, e assegurei a implementação e o funcionamento eficaz das
-            aplicações em produção. Sou uma pessoa
-            <strong className="pink"> proativa,</strong>
-            <strong className="pink"> criativa,</strong> com
-            <strong className="pink"> capacidade de adaptação,</strong>
-            <strong className="pink"> aprendizado rápido</strong> e
-            <strong className="pink"> compromisso com os prazos.</strong>
-          </p>
-          <p>
-            Durante meus estudos tive contato com diversas tecnologias como:
-          </p>
 
-          <div className="cards">
-            {knowledges.map((knowledge, index) => {
-              return <Card key={index} knowledge={knowledge} />
-            })}
-          </div>
+          <div className="section-portfolio">
+            <h1>Meus projetos</h1>
 
-          <h1>Meus projetos</h1>
-
-          <div className="content-project">
-            <Project />
+            <div className="content-project">
+              <Project />
+            </div>
           </div>
         </div>
       </div>
