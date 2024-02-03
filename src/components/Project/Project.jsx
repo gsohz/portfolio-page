@@ -2,7 +2,10 @@ import { useGitHubAutomatedRepos, StackIcons } from 'github-automated-repos'
 import './Project.css'
 
 export default function Project() {
-  const projects = useGitHubAutomatedRepos('gsohz', 'pinned')
+  const projectsUser = useGitHubAutomatedRepos('gsohz', 'pinned')
+  const projectsOrganization = useGitHubAutomatedRepos('Teamtanic', 'pinned')
+
+  const projects = projectsUser.concat(projectsOrganization)
 
   return (
     <>
