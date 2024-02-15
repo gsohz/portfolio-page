@@ -4,11 +4,14 @@ body,
   height: 100%;
   margin: 0;
   font-family: 'Jost', Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   background-color: #05000c;
   color: #efefef;
-  display: flex;
-  justify-content: center;
 }

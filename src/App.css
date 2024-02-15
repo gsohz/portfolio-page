@@ -1,8 +1,13 @@
 
-#root {
-  max-width: 1280px;
+#root { 
   padding: 2rem;
 }
+
+.container{
+  display: flex;
+  max-width: 100%;
+}
+
 
 .logo {
   height: 20em;
@@ -93,6 +98,7 @@ strong {
   display: flex;
   justify-content: center;
   gap: 2em;
+  flex-wrap: wrap;
 }
 
 .header-portfolio {
@@ -164,4 +170,34 @@ a:visited {
 
 .content-project > div {
   flex: 30%;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 10em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+    border-radius: 50%;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .container{
+    padding: 0;
+  }
+
+  .content{
+    padding: 0;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .header-portfolio{
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
