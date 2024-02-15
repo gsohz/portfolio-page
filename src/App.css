@@ -200,4 +200,8 @@ a:visited {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .header-portfolio{
+    padding-top: 4em;
+  }
 }
